@@ -58,6 +58,13 @@ if (localStorage.getItem("backGround") !== null) {
 
 let randomBackground = document.querySelectorAll(".random-background span");
 randomBackground.forEach((span) => {
+    if (
+        span.dataset.background === "yes" &&
+        span.classList.contains("active")
+    ) {
+        randomBAckgroundOption = true;
+        randomizeImage();
+    }
     span.addEventListener("click", (el) => {
         // store the option in localstorage
         localStorage.setItem("backGround", el.target.dataset.background);

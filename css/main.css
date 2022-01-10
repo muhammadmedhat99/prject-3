@@ -675,7 +675,7 @@ a {
 /* start contact us section  */
 .contact-us {
     padding: 80px 0;
-    background-image: url("/imgs/contact.png");
+    background-image: url("../imgs/contact.png");
     background-size: cover;
     z-index: -1;
     text-align: center;
